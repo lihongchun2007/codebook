@@ -31,7 +31,7 @@ def convertSource2Md(file_name, root, dest):
     lang = getCodeLanguage(ext)
     
     if not file_name.endswith('.md'):
-        src_texts.insert(0, '# {}\n'.format(short_name))
+        src_texts.insert(0, '\n# {}\n'.format(short_name))
         src_texts.insert(1, '```{}\n'.format(lang))
         src_texts.append('```\n')
 
